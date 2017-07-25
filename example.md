@@ -1,5 +1,12 @@
 ---
-title: "Test"
+title: Test
 ---
 
-Some markdown
+Some **markdown**
+
+{{% button href="/test/" %}}
+
+{{% button href="https://google.com" %}}
+
+{{% button href="mailto:someone@example.com" %}}
+
