@@ -1,7 +1,9 @@
 backend:
   name: github
-  repo: chrisgeary92/netlify-cms-issue
+  repo: chrisgeary92/netlify-cms-editor-issue
   branch: master
+
+media_folder: "cms"
 
 collections:
 
