@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: chrisgeary92/netlify-cms-issue
+  branch: master
+
+collections:
+
+  - name: "example"
+    label: "Example"
+    files:
+      - name: "example"
+        label: "Example"
+        file: "example.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
