@@ -8,5 +8,28 @@
 </head>
 <body>
     <script src="https://unpkg.com/netlify-cms@~0.4/dist/cms.js"></script>
+    <script>
+
+    CMS.registerEditorComponent({
+        id: "button",
+        label: "Button",
+        fields: [{name: 'href', label: 'Hyperlink'}],
+        pattern: /^{{\%\s?button href=\"(.*)\"\s?\%}}/,
+        fromBlock: function (match) {
+            return {
+                href: match[1]
+            };
+        },
+        toBlock: function (obj) {
+            return '{{% button href="' + obj.href + '" %}}';
+        },
+        toPreview: function (obj) {
+            return (
+                'Link: ' + obj.href
+            );
+        }
+    });
+
+    </script>
 </body>
 </html>
